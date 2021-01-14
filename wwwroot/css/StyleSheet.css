@@ -1,0 +1,28 @@
+﻿/*
+True Fullmer
+Group 1-11
+This is my CSS sheet used to set background colors and controling
+size of tags
+*/
+
+.main_div {
+    text-align: center;
+    background-color: darkgoldenrod;
+    width: 1000px;
+    height: 1300px;
+    margin: auto;
+}
+
+.pic {
+    width:300px;
+    height:450px;
+}
+
+body {
+    background-color:black;
+}
+
+ul {
+    list-style-type:none;
+    list-style:none;
+}

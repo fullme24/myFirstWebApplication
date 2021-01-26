@@ -1,0 +1,63 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    //Setting up title
+    ViewBag.h1 = "Grade Calculater";
+}
+@*
+    The code below is bringing in the model for the GradeCal data
+*@
+@model GradeCalModel
+<body>
+    <h1>
+        @ViewBag.h1
+    </h1>
+
+    <p>
+        Note: Please enter the number as a percentage, not as a decimal. Ex. 98
+    </p>
+
+    <form onsubmit="gradeCal()" class="form" method="post">
+        <label for="Assignments">Assignments</label>
+
+        <input id="Assignments" type="number" asp-for="Assignments"/>
+
+        <br />
+        <br />
+
+        <label for="GroupProjects">Group Projects</label>
+
+        <input id="GroupProjects" type="number" asp-for="GroupProjects"/>
+
+        <br />
+        <br />
+
+        <label for="Quizzes">Quizzes</label>
+
+        <input id="Quizzes" type="number" asp-for="Quizzes"/>
+
+        <br />
+        <br />
+
+        <label for="Exams">Exams</label>
+
+        <input id="Exams" type="number" asp-for="Exams"/>
+
+        <br />
+        <br />
+
+        <label for="Intex">INTEX</label>
+
+        <input id="Intex" type="number" asp-for="Intex"/>
+
+        <br />
+        <br />
+
+        <input type="submit" value="calculate" id="submit" />
+
+        <div asp-validation-summary="All"></div>
+    </form>
+
+    <br />
+</body>

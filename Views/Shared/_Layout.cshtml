@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<!--True Fullmer
+Group 1-11
+The following is the HTMl for my application. This includes information
+about myself and a form that will be used to send data to a function inorder to caculate
+a numeric and letter grade.
+Furthermore, this particular file is the base layout for all views
+-->
+<html>
+
+<head>
+    <link href="~/css/StyleSheet.css" rel="stylesheet" />
+
+    <link rel="icon" href="~/img/senior photos.jpg">
+
+    <title>@ViewBag.Title</title>
+</head>
+
+<body>
+    <div class="main_div">
+        <header>
+            <div class="menu">
+                <menu>
+                    <ul class="black">
+                        <li>
+                            <a asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+
+                        <li>
+                            <a asp-controller="Home" asp-action="GradeCal">Grade Calculator</a>
+                        </li>
+                    </ul>
+                </menu>
+            </div>
+        </header>
+
+        <h1 class="name">
+            @ViewBag.name
+        </h1>
+
+        @RenderBody()
+    </div>
+
+    <footer>
+        <script src="~/js/JavaScript.js"></script>
+        <script src="~/node_modules/jquery/dist/jquery.min.js"></script>
+    </footer>
+</body>
+</html>

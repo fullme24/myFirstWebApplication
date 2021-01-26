@@ -26,3 +26,12 @@ ul {
     list-style-type:none;
     list-style:none;
 }
+
+.menu {
+    background-color: saddlebrown;
+    text-align: justify;
+}
+
+ul.black {
+    color: #000;
+}
